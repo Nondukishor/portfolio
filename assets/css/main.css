@@ -1,0 +1,179 @@
+@import "bootstrap-4.css";
+
+html,body{
+  font-size: 10px;
+}
+
+h1{
+  color: #fff;
+  font-size: 4rem
+}
+
+.bg-yellow{
+  background-color: rgb(223, 223, 15);
+  padding: 3rem;
+  border-radius: .3rem;
+}
+.about-me-title{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.header{
+   max-width:100%;
+   height:100vh;
+   background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/header-bg.png');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center ;
+   background-size:cover;
+   position: relative;
+}
+
+.hero-section{
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#fff;
+}
+
+.post-title{
+  -webkit-font-smoothing: antialiased;
+  font-size: 10rem;
+  margin-top:5rem;
+}
+
+.post span{
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: 'Titan One', cursive;
+  font-size: 80px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #CCC,
+               0 2px 0 #CCC,
+               0 3px 0 #CCC,
+               0 4px 0 #CCC,
+               0 5px 0 #CCC,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .4);
+}
+
+h1 span:nth-child(2) { animation-delay: .1s; }
+h1 span:nth-child(3) { animation-delay: .2s; }
+h1 span:nth-child(4) { animation-delay: .3s; }
+h1 span:nth-child(5) { animation-delay: .4s; }
+h1 span:nth-child(6) { animation-delay: .5s; }
+h1 span:nth-child(7) { animation-delay: .6s; }
+h1 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2);
+  }
+}
+
+
+.learn-more-btn{
+  border-radius: 0;
+  position: absolute;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.learn-more-btn:hover{
+  color: #000;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.nav-bar{
+  width: 100%;
+  height: 7.5rem;
+  background: #252e30;
+}
+.nav-bar ul{
+ display: flex;
+ list-style: none;
+ justify-content: center;
+ align-items: center;
+}
+.nav-bar ul li{
+  transition: .3s;
+  padding: 2.2rem;
+}
+.nav-bar ul li a{
+ text-transform: uppercase;
+ text-decoration: none;
+ color: #fff;
+ font-size: 1.8rem;
+ 
+}
+.nav-bar ul li:hover{
+  background-color: red;
+  transform: rotate(360deg);
+}
+
+main{
+  background: #ffff;
+}
+
+.about-me{
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('/assets/images/about-me-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  /* height: 100vh;  */
+}
+.about-me-title h2:hover{
+  transition: 0.5;
+  transform: rotate(180deg);
+}
+.about-me-topic{
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #191f21;
+  height: 15rem;
+
+}
+
+.footer ul{
+  display: flex;
+  list-style: none;
+}
+footer ul li{
+  padding: 1rem;
+}
+
+.footer ul li a{
+  font-size: 1.4rem;
+  text-decoration: none;
+}
