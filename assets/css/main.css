@@ -3,6 +3,10 @@
 html,body{
   font-size: 10px;
 }
+p{
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 h1{
   color: #fff;
@@ -11,9 +15,10 @@ h1{
 
 .bg-yellow{
   background-color: rgb(223, 223, 15);
-  padding: 3rem;
-  border-radius: .3rem;
+  padding: 2rem;
+  border-radius: 50%;
 }
+
 .about-me-title{
   display: flex;
   justify-content: center;
@@ -49,11 +54,11 @@ h1{
 
 .post span{
   position: relative;
-  top: 20px;
+  top: 2rem;
   display: inline-block;
   animation: bounce .3s ease infinite alternate;
   font-family: 'Titan One', cursive;
-  font-size: 80px;
+  font-size: 40px;
   color: #FFF;
   text-shadow: 0 1px 0 #CCC,
                0 2px 0 #CCC,
@@ -137,7 +142,8 @@ main{
 }
 
 .about-me-wrapper{
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('/assets/images/about-me-bg.jpg');
+  /* background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('/assets/images/about-me-bg.jpg'); */
+  background-color: #223b41;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -176,4 +182,8 @@ footer ul li{
 .footer ul li a{
   font-size: 1.4rem;
   text-decoration: none;
+}
+
+.social-elements li a:hover{
+  transform: rotate(360deg);
 }
